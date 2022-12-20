@@ -27,4 +27,6 @@ func main() {
 
 	}
 
+	// var supraja = User("supraja",1290,"IT",76)
+
 }
