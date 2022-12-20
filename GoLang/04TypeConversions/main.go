@@ -18,7 +18,7 @@ func main() {
 	input, _ := reader.ReadString('\n')
 
 	fmt.Println("Thank you for rating", input)
-	fmt.Printf("type of input is %T", input)
+	fmt.Printf("type of input is %v", input)
 
 	// numRating := input + 1 this won't work because input is string
 
@@ -30,5 +30,15 @@ func main() {
 		fmt.Println(numRating + 1)
 
 	}
+
+	// ways to convert
+
+	//  it may look easy but loss data is found in changinging the types
+	var i int = 42
+	fmt.Printf("%v ,%T", i, i)
+
+	var j float32
+	j = float32(i)
+	fmt.Printf("%v,%T", j, j)
 
 }
